@@ -10,13 +10,9 @@ body {
 
 header {
     background-color: #1E1E1E;
-    /* צבע הרקע */
     color: white;
-    /* צבע הטקסט */
     padding: 20px;
-    /* רווח פנימי */
     text-align: center;
-    /* מרכז את הטקסט */
     list-style-type: none;
     display: inline;
     margin: 0 15px;
@@ -29,7 +25,6 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    /* לוודא שהניווט מכסה את כל רוחב הדף */
     background-color: #222;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -99,27 +94,21 @@ h3 {
 button {
     padding: 10px 20px;
     background-color: #e0cf83;
-    /* צבע כפתור */
     color: #1E1E1E;
-    /* טקסט כהה לכפתורים */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    /* אפקטים */
 }
 
 .btn {
     padding: 10px 20px;
     background-color: #e0cf83;
-    /* צבע כפתור */
     color: #1E1E1E;
-    /* טקסט כהה לכפתורים */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    /* אפקטים */
 }
 
 .container {
@@ -167,69 +156,53 @@ button {
 
 .card p {
     margin: 10px 0;
-    /* רווח סביב התוכן */
     flex-grow: 1;
-    /* מאפשר לתוכן לתפוס מקום */
 }
 
 .card button {
     padding: 10px 15px;
     margin-top: 20px;
-    /* ריווח פנימי */
     background-color: #e0cf83;
-    /* צבע הכפתור */
     color: #111;
     border: none;
     border-radius: 4px;
-    /* פינות רכות לכפתור */
     cursor: pointer;
 }
 
 .card button:hover {
     background-color: #a3783d;
-    /* צבע הכפתור בעת ריחוף */
 }
 
 
-/* עיצוב הטופס */
 form {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
-    /* מרכז את הטופס */
     padding: 20px;
     background: #222;
-    /* צבע רקע כהה */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 form label {
     margin: 10px 0 5px;
-    /* רווח בין תוויות לשדות */
     color: #a3783d;
-    /* צבע תוויות זהב */
 }
 
 form input,
 form textarea {
     padding: 10px;
     border: 1px solid rgb(236, 184, 52);
-    /* גבול זהב על השדות */
     border-radius: 5px;
     margin-bottom: 15px;
     background-color: #333;
-    /* רקע כהה לשדות */
     color: #F3F3F3;
-    /* צבע טקסט בהיר */
 }
 
 form button {
     background-color: rgb(236, 184, 52);
-    /* צבע כפתור */
     color: #1E1E1E;
-    /* טקסט כהה */
     border: none;
     padding: 10px;
     border-radius: 5px;
@@ -239,7 +212,6 @@ form button {
 
 form button:hover {
     background-color: rgb(236, 184, 52);
-    /* צבע כפתור בעת ריחוף */
 }
 
 
@@ -301,22 +273,18 @@ footer {
     text-decoration: underline;
 }
 
-/****************************************************/
 
 .nav-toggle {
     display: none;
-    /* Hide the checkbox by default */
 }
 
 .nav-toggle-label {
     display: none;
-    /* Hide the label by default */
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
     z-index: 1001;
-    /* Ensure it's above other content */
     width: 30px;
     height: 30px;
 }
@@ -372,94 +340,61 @@ footer {
         display: none;
         flex-direction: column;
         position: sticky;
-        /* Ensures it stays in a fixed position relative to the viewport */
         top: 0;
-        /* Aligns the top edge of the menu to the top of the page */
         right: 0;
-        /* Aligns the right edge of the menu to the right of the page */
         width: 35%;
-        /* Set the width of the menu */
         height: 100vp;
-        /* Extend the menu to the full height of the page */
         background-color: #222;
-        /* Background color for the menu */
         transform: translateX(100%);
-        /* Initially hides the menu off-screen to the right */
         transition: transform 0.3s ease;
-        /* Smooth transition when toggling the menu */
         z-index: 1000;
-        /* Ensures it appears above other elements */
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     }
 
     .HmburgerNav hr {
         width: 100%;
         margin: 0;
-        /* Remove default margin */
         border: none;
-        /* Optional: Customize border */
         border-top: 1px solid #F3F3F3;
-        /* Adjust color and style */
     }
 
     .HmburgerNav ul {
         display: flex;
-        /* Flexbox for layout */
         flex-direction: column;
-        /* Ensure items stack vertically */
         padding: 0;
-        /* Remove default padding */
         margin: 0;
-        /* Remove default margin */
         text-align: center;
-        /* Center align items */
         list-style: none;
-        /* Remove bullets from list items */
         gap: 10px;
-        /* Add spacing between items */
     }
 
     .HmburgerNav ul li {
         margin: 0;
-        /* Reset margin to prevent extra spacing */
     }
 
     .HmburgerNav ul li a {
         text-decoration: none;
-        /* Remove underline */
         color: white;
-        /* Adjust text color */
         font-size: 18px;
-        /* Adjust font size */
     }
 
     .HmburgerNav ul li button {
         background: none;
-        /* Transparent button background */
         border: none;
-        /* Remove border */
         color: white;
-        /* Button text color */
         font-size: 18px;
-        /* Adjust font size */
         cursor: pointer;
-        /* Pointer cursor on hover */
         padding: 10px;
-        /* Add some padding for better spacing */
         width: 100%;
-        /* Make button take full width of its parent */
         text-align: center;
-        /* Center text inside button */
     }
 
 
-    /* When checkbox is checked, show the menu */
     .nav-toggle:checked~.HmburgerNav {
         display: flex;
         transform: translateX(0);
     }
 
-    /* Transform the hamburger icon to an "X" when active */
     .nav-toggle:checked+.nav-toggle-label div:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
